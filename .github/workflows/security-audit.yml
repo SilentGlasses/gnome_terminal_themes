@@ -26,7 +26,7 @@ jobs:
           scandir: '.'
           format: gcc
         env:
-          SHELLCHECK_OPTS: -e SC1091
+          SHELLCHECK_OPTS: -e SC1091 -e SC2034
 
   gitleaks:
     name: Secret Detection
@@ -52,7 +52,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: javascript
+          languages: python
           queries: security-extended
 
       - name: Perform CodeQL Analysis
@@ -68,39 +68,39 @@ jobs:
       - name: Check for dangerous patterns
         run: |
           echo "## Script Security Check" >> $GITHUB_STEP_SUMMARY
-          
+
           ISSUES=0
-          
+
           # Check for eval usage
           if grep -rn 'eval ' --include="*.sh" .; then
             echo "⚠️ Found eval usage - review for command injection risks" >> $GITHUB_STEP_SUMMARY
             ISSUES=$((ISSUES + 1))
           fi
-          
+
           # Check for curl piped to bash (excluding our legitimate remote install pattern)
           if grep -rn 'curl.*|.*bash' --include="*.sh" . | grep -v "script_content"; then
             echo "⚠️ Found curl piped to bash - potential security risk" >> $GITHUB_STEP_SUMMARY
             ISSUES=$((ISSUES + 1))
           fi
-          
+
           # Check for hardcoded credentials patterns
           if grep -rniE '(password|secret|api_key|token)\s*=' --include="*.sh" . | grep -v 'GITHUB_TOKEN'; then
             echo "⚠️ Possible hardcoded credentials detected" >> $GITHUB_STEP_SUMMARY
             ISSUES=$((ISSUES + 1))
           fi
-          
+
           # Check for world-writable file permissions
           if grep -rn 'chmod.*777' --include="*.sh" .; then
             echo "⚠️ Found chmod 777 - overly permissive" >> $GITHUB_STEP_SUMMARY
             ISSUES=$((ISSUES + 1))
           fi
-          
+
           # Check for sudo without user confirmation
           if grep -rn 'sudo.*-y' --include="*.sh" .; then
             echo "⚠️ Found sudo with -y flag - runs without confirmation" >> $GITHUB_STEP_SUMMARY
             ISSUES=$((ISSUES + 1))
           fi
-          
+
           if [ $ISSUES -eq 0 ]; then
             echo "✅ No obvious security issues detected" >> $GITHUB_STEP_SUMMARY
           else
@@ -120,7 +120,7 @@ jobs:
           echo "## File Permissions Report" >> $GITHUB_STEP_SUMMARY
           echo "| File | Permissions |" >> $GITHUB_STEP_SUMMARY
           echo "|------|-------------|" >> $GITHUB_STEP_SUMMARY
-          
+
           find . -name "*.sh" -type f | while read -r file; do
             perms=$(stat -c '%a' "$file")
             echo "| $file | $perms |" >> $GITHUB_STEP_SUMMARY

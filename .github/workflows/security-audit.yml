@@ -1,0 +1,127 @@
+name: Security Audit
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  security-events: write
+  pull-requests: read
+
+jobs:
+  shellcheck:
+    name: ShellCheck Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          severity: warning
+          scandir: '.'
+          format: gcc
+        env:
+          SHELLCHECK_OPTS: -e SC1091
+
+  gitleaks:
+    name: Secret Detection
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  codeql:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+          queries: security-extended
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  script-security:
+    name: Script Security Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for dangerous patterns
+        run: |
+          echo "## Script Security Check" >> $GITHUB_STEP_SUMMARY
+          
+          ISSUES=0
+          
+          # Check for eval usage
+          if grep -rn 'eval ' --include="*.sh" .; then
+            echo "⚠️ Found eval usage - review for command injection risks" >> $GITHUB_STEP_SUMMARY
+            ISSUES=$((ISSUES + 1))
+          fi
+          
+          # Check for curl piped to bash (excluding our legitimate remote install pattern)
+          if grep -rn 'curl.*|.*bash' --include="*.sh" . | grep -v "script_content"; then
+            echo "⚠️ Found curl piped to bash - potential security risk" >> $GITHUB_STEP_SUMMARY
+            ISSUES=$((ISSUES + 1))
+          fi
+          
+          # Check for hardcoded credentials patterns
+          if grep -rniE '(password|secret|api_key|token)\s*=' --include="*.sh" . | grep -v 'GITHUB_TOKEN'; then
+            echo "⚠️ Possible hardcoded credentials detected" >> $GITHUB_STEP_SUMMARY
+            ISSUES=$((ISSUES + 1))
+          fi
+          
+          # Check for world-writable file permissions
+          if grep -rn 'chmod.*777' --include="*.sh" .; then
+            echo "⚠️ Found chmod 777 - overly permissive" >> $GITHUB_STEP_SUMMARY
+            ISSUES=$((ISSUES + 1))
+          fi
+          
+          # Check for sudo without user confirmation
+          if grep -rn 'sudo.*-y' --include="*.sh" .; then
+            echo "⚠️ Found sudo with -y flag - runs without confirmation" >> $GITHUB_STEP_SUMMARY
+            ISSUES=$((ISSUES + 1))
+          fi
+          
+          if [ $ISSUES -eq 0 ]; then
+            echo "✅ No obvious security issues detected" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Found $ISSUES potential issue(s) - please review" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  permissions-check:
+    name: File Permissions Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Verify script permissions
+        run: |
+          echo "## File Permissions Report" >> $GITHUB_STEP_SUMMARY
+          echo "| File | Permissions |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-------------|" >> $GITHUB_STEP_SUMMARY
+          
+          find . -name "*.sh" -type f | while read -r file; do
+            perms=$(stat -c '%a' "$file")
+            echo "| $file | $perms |" >> $GITHUB_STEP_SUMMARY
+          done

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Terminal window -->
+  <rect x="0" y="0" width="700" height="420" rx="10" fill="#fff5f5" filter="url(#shadow)"/>
+  
+  <!-- Title bar -->
+  <rect x="0" y="0" width="700" height="36" rx="10" fill="#fff5f5"/>
+  <rect x="0" y="26" width="700" height="10" fill="#fff5f5"/>
+  
+  <!-- Window controls -->
+  <circle cx="20" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="6" fill="#27ca40"/>
+  
+  <!-- Title -->
+  <text x="350" y="22" font-family="monospace" font-size="12" fill="#6f3b6c" text-anchor="middle" opacity="0.7">Pride Light</text>
+  
+  <!-- Separator line -->
+  <line x1="0" y1="36" x2="700" y2="36" stroke="#6f3b6c" stroke-opacity="0.2"/>
+  
+  <!-- Content area -->
+  <g transform="translate(20, 50)">
+    <!-- Sample prompt and commands -->
+    <text font-family="monospace" font-size="14" fill="#6f3b6c">
+      <tspan x="0" y="20" fill="#17c34b">❯</tspan>
+      <tspan fill="#6f3b6c"> fastfetch</tspan>
+    </text>
+    
+    <!-- System info block -->
+    <text font-family="monospace" font-size="13">
+      <tspan x="0" y="50" fill="#76eded">OS</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">Ubuntu 24.04 LTS x86_64</tspan>
+      
+      <tspan x="0" y="72" fill="#bcb400">⚙</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">Linux 6.17.0-14-generic</tspan>
+      
+      <tspan x="0" y="94" fill="#d363d3">📦</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">1931 (dpkg), 11 (snap)</tspan>
+      
+      <tspan x="0" y="116" fill="#f34343">🐚</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">zsh 5.9</tspan>
+      
+      <tspan x="0" y="138" fill="#6767ff">🖥</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">GNOME Terminal 3.52.0</tspan>
+      
+      <tspan x="0" y="160" fill="#17c34b">🎨</tspan>
+      <tspan fill="#6f3b6c" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#6f3b6c">Pride Light</tspan>
+    </text>
+    
+    <!-- Sample code block -->
+    <text font-family="monospace" font-size="13">
+      <tspan x="0" y="200" fill="#593624"># Sample syntax highlighting</tspan>
+      <tspan x="0" y="222" fill="#6767ff">function</tspan>
+      <tspan fill="#bcb400"> greet</tspan>
+      <tspan fill="#6f3b6c">() {</tspan>
+      <tspan x="0" y="244" fill="#6f3b6c">    </tspan>
+      <tspan fill="#6767ff">echo</tspan>
+      <tspan fill="#6f3b6c"> </tspan>
+      <tspan fill="#17c34b">"Hello, </tspan>
+      <tspan fill="#76eded">$USER</tspan>
+      <tspan fill="#17c34b">!"</tspan>
+      <tspan x="0" y="266" fill="#6f3b6c">}</tspan>
+    </text>
+    
+    <!-- Color palette circles - Normal colors -->
+    <g transform="translate(0, 290)">
+      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#6f3b6c" opacity="0.6">Normal</text>
+      <circle cx="12" cy="18" r="12" fill="#352116" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="48" cy="18" r="12" fill="#f34343" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="84" cy="18" r="12" fill="#17c34b" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="120" cy="18" r="12" fill="#bcb400" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="156" cy="18" r="12" fill="#6767ff" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="192" cy="18" r="12" fill="#d363d3" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="228" cy="18" r="12" fill="#76eded" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="264" cy="18" r="12" fill="#fffbfb" stroke="#6f3b6c" stroke-opacity="0.2"/>
+    </g>
+    
+    <!-- Color palette circles - Bright colors -->
+    <g transform="translate(320, 290)">
+      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#6f3b6c" opacity="0.6">Bright</text>
+      <circle cx="12" cy="18" r="12" fill="#593624" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="48" cy="18" r="12" fill="#ff4b4b" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="84" cy="18" r="12" fill="#1cdb55" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="120" cy="18" r="12" fill="#d8ce05" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="156" cy="18" r="12" fill="#8080fc" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="192" cy="18" r="12" fill="#e673e6" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="228" cy="18" r="12" fill="#88ffff" stroke="#6f3b6c" stroke-opacity="0.2"/>
+      <circle cx="264" cy="18" r="12" fill="#ffffff" stroke="#6f3b6c" stroke-opacity="0.2"/>
+    </g>
+  </g>
+</svg>

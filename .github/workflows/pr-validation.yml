@@ -1,0 +1,128 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  syntax-check:
+    name: Bash Syntax Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate bash syntax
+        run: |
+          echo "## Bash Syntax Check" >> $GITHUB_STEP_SUMMARY
+          ERRORS=0
+          
+          for script in $(find . -name "*.sh" -type f); do
+            if bash -n "$script" 2>&1; then
+              echo "✅ $script - syntax OK" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ $script - syntax error" >> $GITHUB_STEP_SUMMARY
+              ERRORS=$((ERRORS + 1))
+            fi
+          done
+          
+          if [ $ERRORS -gt 0 ]; then
+            echo "::error::Found $ERRORS script(s) with syntax errors"
+            exit 1
+          fi
+
+  theme-validation:
+    name: Theme File Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate theme scripts
+        run: |
+          echo "## Theme Validation" >> $GITHUB_STEP_SUMMARY
+          ERRORS=0
+          
+          for theme in themes/*.sh; do
+            [ -f "$theme" ] || continue
+            
+            # Check required variables
+            if ! grep -q "^PROFILE_NAME=" "$theme"; then
+              echo "❌ $theme - missing PROFILE_NAME" >> $GITHUB_STEP_SUMMARY
+              ERRORS=$((ERRORS + 1))
+            fi
+            
+            if ! grep -q "^PROFILE_UUID=" "$theme"; then
+              echo "❌ $theme - missing PROFILE_UUID" >> $GITHUB_STEP_SUMMARY
+              ERRORS=$((ERRORS + 1))
+            fi
+            
+            # Validate UUID format
+            uuid=$(grep "^PROFILE_UUID=" "$theme" | cut -d'"' -f2)
+            if [[ ! "$uuid" =~ ^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$ ]]; then
+              echo "❌ $theme - invalid UUID format: $uuid" >> $GITHUB_STEP_SUMMARY
+              ERRORS=$((ERRORS + 1))
+            else
+              echo "✅ $theme - valid" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          
+          if [ $ERRORS -gt 0 ]; then
+            echo "::error::Found $ERRORS validation error(s)"
+            exit 1
+          fi
+
+  duplicate-uuid-check:
+    name: Duplicate UUID Detection
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check for duplicate UUIDs
+        run: |
+          echo "## UUID Uniqueness Check" >> $GITHUB_STEP_SUMMARY
+          
+          # Extract all UUIDs
+          grep -h "^PROFILE_UUID=" themes/*.sh 2>/dev/null | cut -d'"' -f2 | sort > /tmp/uuids.txt
+          
+          # Check for duplicates
+          DUPES=$(uniq -d /tmp/uuids.txt)
+          
+          if [ -n "$DUPES" ]; then
+            echo "❌ Duplicate UUIDs found:" >> $GITHUB_STEP_SUMMARY
+            echo "$DUPES" >> $GITHUB_STEP_SUMMARY
+            echo "::error::Duplicate UUIDs detected"
+            exit 1
+          else
+            echo "✅ All UUIDs are unique" >> $GITHUB_STEP_SUMMARY
+          fi
+
+  changed-files-review:
+    name: Changed Files Summary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Summarize changes
+        run: |
+          echo "## Changed Files" >> $GITHUB_STEP_SUMMARY
+          
+          # Get changed files
+          git diff --name-only origin/${{ github.base_ref }}...HEAD | while read -r file; do
+            if [[ "$file" == *.sh ]]; then
+              echo "🔧 \`$file\` (script)" >> $GITHUB_STEP_SUMMARY
+            elif [[ "$file" == themes/* ]]; then
+              echo "🎨 \`$file\` (theme)" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "📄 \`$file\`" >> $GITHUB_STEP_SUMMARY
+            fi
+          done

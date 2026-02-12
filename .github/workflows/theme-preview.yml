@@ -35,7 +35,7 @@ jobs:
           python3 .github/scripts/generate_preview.py --all --update-readme
 
       - name: Upload preview artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: theme-previews
           path: previews/*.svg

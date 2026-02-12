@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Dark Knight'
 background-color='rgb(12,16,20)'
 foreground-color='rgb(153,209,206)'
-palette=['rgb(9,31,46)', 'rgb(194,49,39)', 'rgb(42,168,137)', 'rgb(237,180,67)', 'rgb(30,100,121)', 'rgb(136,140,166)', 'rgb(51,133,158)', 'rgb(211,235,233)', 'rgb(9,31,46)', 'rgb(194,49,39)', 'rgb(42,168,137)', 'rgb(237,180,67)', 'rgb(30,100,121)', 'rgb(136,140,166)', 'rgb(51,133,158)', 'rgb(211,235,233)']
+palette=['rgb(9,31,46)', 'rgb(194,49,39)', 'rgb(42,168,137)', 'rgb(237,180,67)', 'rgb(30,100,121)', 'rgb(136,140,166)', 'rgb(51,133,158)', 'rgb(211,235,233)', 'rgb(70,95,110)', 'rgb(220,85,75)', 'rgb(75,195,165)', 'rgb(250,200,100)', 'rgb(65,135,160)', 'rgb(165,170,195)', 'rgb(85,165,190)', 'rgb(230,250,248)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

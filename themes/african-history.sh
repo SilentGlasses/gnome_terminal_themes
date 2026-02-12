@@ -12,8 +12,8 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 [/]
 visible-name='African History'
 background-color='rgb(32,28,29)'
-foreground-color='rgb(167,141,124)'
-palette=['rgb(43,41,38)', 'rgb(195,91,72)', 'rgb(69,137,98)', 'rgb(229,192,39)', 'rgb(18,85,146)', 'rgb(77,71,117)', 'rgb(86,136,137)', 'rgb(255,255,255)', 'rgb(43,41,38)', 'rgb(195,91,72)', 'rgb(69,137,98)', 'rgb(229,192,39)', 'rgb(18,85,146)', 'rgb(77,71,117)', 'rgb(86,136,137)', 'rgb(255,255,255)']
+foreground-color='rgb(220,195,175)'
+palette=['rgb(50,45,42)', 'rgb(215,110,90)', 'rgb(95,165,120)', 'rgb(240,205,70)', 'rgb(85,140,190)', 'rgb(140,120,170)', 'rgb(115,170,170)', 'rgb(245,240,235)', 'rgb(80,72,68)', 'rgb(235,135,115)', 'rgb(125,190,145)', 'rgb(250,220,100)', 'rgb(120,170,215)', 'rgb(175,155,200)', 'rgb(150,200,200)', 'rgb(255,250,245)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

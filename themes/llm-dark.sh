@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='LLM Dark'
 background-color='rgb(20,35,56)'
 foreground-color='rgb(254,254,254)'
-palette=['rgb(0,0,0)', 'rgb(234,94,57)', 'rgb(127,155,123)', 'rgb(244,191,97)', 'rgb(142,154,246)', 'rgb(236,143,249)', 'rgb(180,209,251)', 'rgb(254,254,254)', 'rgb(0,0,0)', 'rgb(234,94,57)', 'rgb(127,155,123)', 'rgb(244,191,97)', 'rgb(142,154,246)', 'rgb(236,143,249)', 'rgb(180,209,251)', 'rgb(254,254,254)']
+palette=['rgb(0,0,0)', 'rgb(234,94,57)', 'rgb(127,155,123)', 'rgb(244,191,97)', 'rgb(142,154,246)', 'rgb(236,143,249)', 'rgb(180,209,251)', 'rgb(254,254,254)', 'rgb(90,105,130)', 'rgb(234,94,57)', 'rgb(127,155,123)', 'rgb(244,191,97)', 'rgb(142,154,246)', 'rgb(236,143,249)', 'rgb(180,209,251)', 'rgb(254,254,254)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

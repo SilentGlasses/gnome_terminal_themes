@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Tabs Dark'
 background-color='rgb(42,42,42)'
 foreground-color='rgb(254,254,254)'
-palette=['rgb(0,0,0)', 'rgb(182,12,112)', 'rgb(23,162,120)', 'rgb(168,154,22)', 'rgb(6,138,187)', 'rgb(88,67,122)', 'rgb(70,157,175)', 'rgb(253,253,253)', 'rgb(0,0,0)', 'rgb(204,0,118)', 'rgb(16,165,121)', 'rgb(166,157,16)', 'rgb(0,142,195)', 'rgb(95,78,128)', 'rgb(26,167,180)', 'rgb(255,255,255)']
+palette=['rgb(0,0,0)', 'rgb(182,12,112)', 'rgb(23,162,120)', 'rgb(168,154,22)', 'rgb(6,138,187)', 'rgb(88,67,122)', 'rgb(70,157,175)', 'rgb(253,253,253)', 'rgb(105,105,105)', 'rgb(204,0,118)', 'rgb(16,165,121)', 'rgb(166,157,16)', 'rgb(0,142,195)', 'rgb(95,78,128)', 'rgb(26,167,180)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

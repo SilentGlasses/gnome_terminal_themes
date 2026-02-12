@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Taken Will'
 background-color='rgb(34,36,51)'
 foreground-color='rgb(215,239,247)'
-palette=['rgb(6,12,20)', 'rgb(48,63,79)', 'rgb(85,118,125)', 'rgb(131,151,160)', 'rgb(43,70,83)', 'rgb(72,82,93)', 'rgb(178,200,209)', 'rgb(231,249,255)', 'rgb(6,12,20)', 'rgb(48,63,79)', 'rgb(85,118,125)', 'rgb(131,151,160)', 'rgb(43,70,83)', 'rgb(72,82,93)', 'rgb(178,200,209)', 'rgb(231,249,255)']
+palette=['rgb(6,12,20)', 'rgb(48,63,79)', 'rgb(85,118,125)', 'rgb(131,151,160)', 'rgb(43,70,83)', 'rgb(72,82,93)', 'rgb(178,200,209)', 'rgb(231,249,255)', 'rgb(90,105,120)', 'rgb(80,100,120)', 'rgb(120,155,165)', 'rgb(165,190,200)', 'rgb(80,110,130)', 'rgb(110,125,140)', 'rgb(205,225,235)', 'rgb(245,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

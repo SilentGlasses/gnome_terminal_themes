@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='117'
 background-color='rgb(22,22,22)'
 foreground-color='rgb(249,252,240)'
-palette=['rgb(27,18,26)', 'rgb(211,96,67)', 'rgb(153,158,94)', 'rgb(237,204,0)', 'rgb(100,124,186)', 'rgb(104,98,134)', 'rgb(186,198,236)', 'rgb(249,252,240)', 'rgb(27,18,26)', 'rgb(211,96,67)', 'rgb(153,158,94)', 'rgb(237,204,0)', 'rgb(100,124,186)', 'rgb(104,98,134)', 'rgb(186,198,236)', 'rgb(249,252,240)']
+palette=['rgb(27,18,26)', 'rgb(211,96,67)', 'rgb(153,158,94)', 'rgb(237,204,0)', 'rgb(100,124,186)', 'rgb(104,98,134)', 'rgb(186,198,236)', 'rgb(249,252,240)', 'rgb(95,85,92)', 'rgb(211,96,67)', 'rgb(153,158,94)', 'rgb(237,204,0)', 'rgb(100,124,186)', 'rgb(104,98,134)', 'rgb(186,198,236)', 'rgb(249,252,240)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

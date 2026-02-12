@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Solar Tide Night'
 background-color='rgb(14,26,34)'
 foreground-color='rgb(238,246,251)'
-palette=['rgb(14,26,34)', 'rgb(255,122,92)', 'rgb(127,209,161)', 'rgb(255,209,102)', 'rgb(95,168,211)', 'rgb(195,139,214)', 'rgb(95,211,198)', 'rgb(220,234,242)', 'rgb(31,52,66)', 'rgb(255,154,130)', 'rgb(159,230,187)', 'rgb(255,224,138)', 'rgb(127,194,232)', 'rgb(221,179,239)', 'rgb(127,240,224)', 'rgb(255,255,255)']
+palette=['rgb(14,26,34)', 'rgb(255,122,92)', 'rgb(127,209,161)', 'rgb(255,209,102)', 'rgb(95,168,211)', 'rgb(195,139,214)', 'rgb(95,211,198)', 'rgb(220,234,242)', 'rgb(80,105,125)', 'rgb(255,154,130)', 'rgb(159,230,187)', 'rgb(255,224,138)', 'rgb(127,194,232)', 'rgb(221,179,239)', 'rgb(127,240,224)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

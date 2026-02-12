@@ -1,6 +1,7 @@
 #!/bin/bash
 # GNOME Terminal Theme: Liquid Glass Light
-# Converted from Warp theme
+# Inspired by Apple's Liquid Glass design language
+# Features: Frosted translucent feel, soft pastels, airy luminosity
 # For GNOME Terminal 3.52.0 (GNOME 46)
 
 PROFILE_NAME="Liquid Glass Light"
@@ -11,11 +12,13 @@ PROFILE_UUID="196f90b0-6ef8-4b1f-ab5e-d05048f38844"
 dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 [/]
 visible-name='Liquid Glass Light'
-background-color='rgb(255,255,255)'
-foreground-color='rgb(28,30,33)'
-palette=['rgb(0,0,0)', 'rgb(153,1,0)', 'rgb(0,166,0)', 'rgb(153,153,0)', 'rgb(2,0,178)', 'rgb(178,0,178)', 'rgb(0,166,178)', 'rgb(244,248,240)', 'rgb(102,102,102)', 'rgb(230,3,0)', 'rgb(0,217,0)', 'rgb(230,229,0)', 'rgb(6,0,255)', 'rgb(230,0,230)', 'rgb(0,230,230)', 'rgb(244,248,240)']
+background-color='rgb(248,248,252)'
+foreground-color='rgb(40,40,50)'
+palette=['rgb(60,60,75)', 'rgb(215,75,70)', 'rgb(50,165,80)', 'rgb(185,140,30)', 'rgb(50,120,200)', 'rgb(160,90,180)', 'rgb(45,155,175)', 'rgb(130,130,145)', 'rgb(100,100,115)', 'rgb(235,100,95)', 'rgb(70,190,105)', 'rgb(210,165,50)', 'rgb(80,150,230)', 'rgb(190,120,210)', 'rgb(70,180,200)', 'rgb(180,180,195)']
 use-theme-colors=false
 use-theme-transparency=false
+use-transparent-background=true
+background-transparency-percent=12
 bold-is-bright=true
 EOF
 

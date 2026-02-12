@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Proton Dark'
 background-color='rgb(27,19,64)'
 foreground-color='rgb(245,244,242)'
-palette=['rgb(27,19,64)', 'rgb(235,80,141)', 'rgb(102,222,177)', 'rgb(249,217,73)', 'rgb(80,176,233)', 'rgb(109,74,246)', 'rgb(196,183,255)', 'rgb(245,244,242)', 'rgb(27,19,64)', 'rgb(235,80,141)', 'rgb(102,222,177)', 'rgb(249,217,73)', 'rgb(80,176,233)', 'rgb(109,74,246)', 'rgb(196,183,255)', 'rgb(245,244,242)']
+palette=['rgb(27,19,64)', 'rgb(235,80,141)', 'rgb(102,222,177)', 'rgb(249,217,73)', 'rgb(80,176,233)', 'rgb(109,74,246)', 'rgb(196,183,255)', 'rgb(245,244,242)', 'rgb(90,80,130)', 'rgb(250,115,170)', 'rgb(135,240,200)', 'rgb(255,230,110)', 'rgb(115,200,250)', 'rgb(145,115,255)', 'rgb(215,205,255)', 'rgb(255,254,252)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

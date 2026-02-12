@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Lapiz Dark'
 background-color='rgb(48,48,48)'
 foreground-color='rgb(241,241,241)'
-palette=['rgb(48,48,48)', 'rgb(178,82,130)', 'rgb(126,175,141)', 'rgb(238,227,89)', 'rgb(110,158,203)', 'rgb(97,84,136)', 'rgb(124,176,195)', 'rgb(243,243,241)', 'rgb(48,48,48)', 'rgb(178,82,130)', 'rgb(126,175,141)', 'rgb(238,227,89)', 'rgb(110,158,203)', 'rgb(97,84,136)', 'rgb(124,176,195)', 'rgb(243,243,241)']
+palette=['rgb(48,48,48)', 'rgb(178,82,130)', 'rgb(126,175,141)', 'rgb(238,227,89)', 'rgb(110,158,203)', 'rgb(97,84,136)', 'rgb(124,176,195)', 'rgb(243,243,241)', 'rgb(115,115,115)', 'rgb(200,110,155)', 'rgb(155,200,170)', 'rgb(250,240,120)', 'rgb(140,185,225)', 'rgb(130,115,170)', 'rgb(155,200,220)', 'rgb(255,255,253)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

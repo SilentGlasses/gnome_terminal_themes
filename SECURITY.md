@@ -1,11 +1,5 @@
 # Security Policy
 
-## Supported Versions
-
-| Version | Supported          |
-| ------- | ------------------ |
-| main    | :white_check_mark: |
-
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability in this project, please report it responsibly:

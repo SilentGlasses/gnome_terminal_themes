@@ -1,7 +1,5 @@
 #!/bin/bash
 # GNOME Terminal Theme: Liquid Glass Light
-# Inspired by Apple's Liquid Glass design language
-# Features: Frosted translucent feel, soft pastels, airy luminosity
 # For GNOME Terminal 3.52.0 (GNOME 46)
 
 PROFILE_NAME="Liquid Glass Light"

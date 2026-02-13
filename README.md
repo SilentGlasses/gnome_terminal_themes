@@ -199,7 +199,13 @@ After installation:
 
 ## Uninstallation
 
-To remove a theme, use dconf-editor or:
+Run directly from GitHub without cloning the repository:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/SilentGlasses/gnome_terminal_themes/main/uninstall.sh)
+```
+
+To manually remove a theme, use `dconf-editor` or:
 
 ```bash
 # List all profiles

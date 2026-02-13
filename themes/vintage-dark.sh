@@ -1,6 +1,5 @@
 #!/bin/bash
 # GNOME Terminal Theme: Vintage Dark
-# Converted from Warp theme
 # For GNOME Terminal 3.52.0 (GNOME 46)
 
 PROFILE_NAME="Vintage Dark"

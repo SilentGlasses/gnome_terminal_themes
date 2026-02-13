@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Kasumi Night'
 background-color='rgb(18,22,23)'
 foreground-color='rgb(214,218,215)'
-palette=['rgb(18,22,23)', 'rgb(143,62,62)', 'rgb(95,124,116)', 'rgb(154,138,74)', 'rgb(63,98,114)', 'rgb(107,90,122)', 'rgb(95,138,138)', 'rgb(207,212,209)', 'rgb(30,36,37)', 'rgb(179,90,90)', 'rgb(127,165,155)', 'rgb(196,179,106)', 'rgb(95,138,163)', 'rgb(144,115,173)', 'rgb(127,191,184)', 'rgb(242,244,243)']
+palette=['rgb(18,22,23)', 'rgb(143,62,62)', 'rgb(95,124,116)', 'rgb(154,138,74)', 'rgb(63,98,114)', 'rgb(107,90,122)', 'rgb(95,138,138)', 'rgb(207,212,209)', 'rgb(85,95,98)', 'rgb(179,90,90)', 'rgb(127,165,155)', 'rgb(196,179,106)', 'rgb(95,138,163)', 'rgb(144,115,173)', 'rgb(127,191,184)', 'rgb(242,244,243)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

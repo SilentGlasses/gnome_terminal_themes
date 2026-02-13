@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Mjolnir Warp'
 background-color='rgb(44,46,42)'
 foreground-color='rgb(205,207,204)'
-palette=['rgb(13,9,13)', 'rgb(132,61,62)', 'rgb(132,146,106)', 'rgb(239,184,42)', 'rgb(110,146,200)', 'rgb(119,107,167)', 'rgb(151,223,225)', 'rgb(205,207,204)', 'rgb(13,9,13)', 'rgb(132,61,62)', 'rgb(132,146,106)', 'rgb(239,184,42)', 'rgb(110,146,200)', 'rgb(119,107,167)', 'rgb(151,223,225)', 'rgb(205,207,204)']
+palette=['rgb(13,9,13)', 'rgb(132,61,62)', 'rgb(132,146,106)', 'rgb(239,184,42)', 'rgb(110,146,200)', 'rgb(119,107,167)', 'rgb(151,223,225)', 'rgb(205,207,204)', 'rgb(100,100,95)', 'rgb(165,95,95)', 'rgb(160,175,135)', 'rgb(250,205,80)', 'rgb(140,175,225)', 'rgb(150,140,195)', 'rgb(180,240,242)', 'rgb(230,232,230)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

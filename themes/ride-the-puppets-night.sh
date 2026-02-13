@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Ride the Puppets Night'
 background-color='rgb(11,13,16)'
 foreground-color='rgb(216,219,224)'
-palette=['rgb(11,13,16)', 'rgb(124,45,45)', 'rgb(79,111,95)', 'rgb(154,124,60)', 'rgb(47,111,163)', 'rgb(90,74,111)', 'rgb(63,143,163)', 'rgb(191,197,204)', 'rgb(42,47,54)', 'rgb(184,74,74)', 'rgb(111,163,143)', 'rgb(212,178,106)', 'rgb(95,167,224)', 'rgb(143,127,179)', 'rgb(127,212,224)', 'rgb(255,255,255)']
+palette=['rgb(11,13,16)', 'rgb(124,45,45)', 'rgb(79,111,95)', 'rgb(154,124,60)', 'rgb(47,111,163)', 'rgb(90,74,111)', 'rgb(63,143,163)', 'rgb(191,197,204)', 'rgb(85,95,105)', 'rgb(184,74,74)', 'rgb(111,163,143)', 'rgb(212,178,106)', 'rgb(95,167,224)', 'rgb(143,127,179)', 'rgb(127,212,224)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

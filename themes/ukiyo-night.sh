@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Ukiyo Night'
 background-color='rgb(15,27,30)'
 foreground-color='rgb(216,225,220)'
-palette=['rgb(15,27,30)', 'rgb(158,61,63)', 'rgb(95,127,106)', 'rgb(176,138,62)', 'rgb(47,93,115)', 'rgb(110,79,121)', 'rgb(79,127,122)', 'rgb(207,216,211)', 'rgb(26,42,45)', 'rgb(197,84,84)', 'rgb(127,163,138)', 'rgb(214,180,92)', 'rgb(79,134,161)', 'rgb(154,111,176)', 'rgb(111,177,170)', 'rgb(241,245,243)']
+palette=['rgb(15,27,30)', 'rgb(158,61,63)', 'rgb(95,127,106)', 'rgb(176,138,62)', 'rgb(47,93,115)', 'rgb(110,79,121)', 'rgb(79,127,122)', 'rgb(207,216,211)', 'rgb(80,100,105)', 'rgb(197,84,84)', 'rgb(127,163,138)', 'rgb(214,180,92)', 'rgb(79,134,161)', 'rgb(154,111,176)', 'rgb(111,177,170)', 'rgb(241,245,243)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

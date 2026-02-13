@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Retro Green'
 background-color='rgb(19,36,27)'
 foreground-color='rgb(30,209,116)'
-palette=['rgb(24,48,36)', 'rgb(28,127,76)', 'rgb(32,185,108)', 'rgb(36,234,143)', 'rgb(30,147,88)', 'rgb(28,131,79)', 'rgb(29,178,103)', 'rgb(30,209,116)', 'rgb(24,48,36)', 'rgb(28,127,76)', 'rgb(32,185,108)', 'rgb(36,234,143)', 'rgb(30,147,88)', 'rgb(28,131,79)', 'rgb(29,178,103)', 'rgb(30,209,116)']
+palette=['rgb(24,48,36)', 'rgb(28,127,76)', 'rgb(32,185,108)', 'rgb(36,234,143)', 'rgb(30,147,88)', 'rgb(28,131,79)', 'rgb(29,178,103)', 'rgb(30,209,116)', 'rgb(55,100,75)', 'rgb(60,160,105)', 'rgb(70,215,140)', 'rgb(80,255,175)', 'rgb(65,180,120)', 'rgb(60,165,110)', 'rgb(65,210,135)', 'rgb(70,240,150)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

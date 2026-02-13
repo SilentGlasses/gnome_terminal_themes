@@ -35,61 +35,6 @@ Theme scripts are located in the `themes/` directory:
 
 ## Available Themes
 
-- **117** (`117.sh`)
-- **African History** (`african-history.sh`)
-- **Ame-Nami Day** (`ame-nami-day.sh`)
-- **Ame-Nami Night** (`ame-nami-night.sh`)
-- **Covenant Glass Night** (`covenant-glass-night.sh`)
-- **Dark Knight** (`dark-knight.sh`)
-- **Ethereal Galaxy Dark** (`ethereal-galaxy-dark.sh`)
-- **Flood Contagion** (`flood-contagion.sh`)
-- **Frostbound Day** (`frostbound-day.sh`)
-- **Frostbound Night** (`frostbound-night.sh`)
-- **Kali Blue** (`kali-blue.sh`)
-- **Kasumi Day** (`kasumi-day.sh`)
-- **Kasumi Night** (`kasumi-night.sh`)
-- **LLM Dark** (`llm-dark.sh`)
-- **Lapiz Dark** (`lapiz-dark.sh`)
-- **Lapiz Light** (`lapiz-light.sh`)
-- **Liquid Glass Dark** (`liquid-glass-dark.sh`)
-- **Liquid Glass Light** (`liquid-glass-light.sh`)
-- **Material Dark** (`material-dark.sh`)
-- **Matrix Dark** (`matrix-dark.sh`)
-- **Mjolnir Warp** (`mjolnir-warp.sh`)
-- **Neon Nights** (`neon-nights.sh`)
-- **Neural Nebula Dark** (`neural-nebula-dark.sh`)
-- **Nord Dark** (`nord-dark.sh`)
-- **Nord Light** (`nord-light.sh`)
-- **Pride Dark** (`pride-dark.sh`)
-- **Pride Light** (`pride-light.sh`)
-- **Proton Dark** (`proton-dark.sh`)
-- **Pumpkin Spice Ember** (`pumpkin-spice-ember.sh`)
-- **Pumpkin Spice Ember Day** (`pumpkin-spice-ember-day.sh`)
-- **Retro Green** (`retro-green.sh`)
-- **Ride the Puppets Day** (`ride-the-puppets-day.sh`)
-- **Ride the Puppets Night** (`ride-the-puppets-night.sh`)
-- **Sad Bat** (`sad-bat.sh`)
-- **Solar Tide Day** (`solar-tide-day.sh`)
-- **Solar Tide Night** (`solar-tide-night.sh`)
-- **Spring Bloom Day** (`spring-bloom-day.sh`)
-- **Spring Bloom Night** (`spring-bloom-night.sh`)
-- **Spring Dark** (`spring-dark.sh`)
-- **Spring Light** (`spring-light.sh`)
-- **Strand Dark** (`strand-dark.sh`)
-- **Tabs Dark** (`tabs-dark.sh`)
-- **Taken Will** (`taken-will.sh`)
-- **UNSC Command** (`unsc-command.sh`)
-- **Ukiyo Day** (`ukiyo-day.sh`)
-- **Ukiyo Night** (`ukiyo-night.sh`)
-- **Vintage Dark** (`vintage-dark.sh`)
-- **Webs Dark** (`webs-dark.sh`)
-- **White Rabbit Dark** (`white-rabbit-dark.sh`)
-
-
-
-
-## Theme Previews
-
 ### 117
 <img src="previews/117.svg" alt="117" width="850">
 

@@ -191,12 +191,6 @@ After installation:
 3. Select the installed theme from the profiles list
 4. Set it as default if desired
 
-## Notes
-
-- Themes are installed as separate GNOME Terminal profiles
-- Original Warp themes with background images are converted without backgrounds (GNOME Terminal doesn't support background images in the same way)
-- All color values are preserved from the original Warp themes
-
 ## Uninstallation
 
 Run directly from GitHub without cloning the repository:

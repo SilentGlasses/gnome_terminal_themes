@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Covenant Glass Night'
 background-color='rgb(9,11,16)'
 foreground-color='rgb(228,232,240)'
-palette=['rgb(9,11,16)', 'rgb(127,58,107)', 'rgb(58,107,143)', 'rgb(143,127,179)', 'rgb(79,120,212)', 'rgb(138,92,255)', 'rgb(95,191,255)', 'rgb(202,210,225)', 'rgb(26,28,42)', 'rgb(170,90,143)', 'rgb(95,143,191)', 'rgb(179,163,218)', 'rgb(111,153,232)', 'rgb(170,127,255)', 'rgb(127,212,255)', 'rgb(255,255,255)']
+palette=['rgb(9,11,16)', 'rgb(127,58,107)', 'rgb(58,107,143)', 'rgb(143,127,179)', 'rgb(79,120,212)', 'rgb(138,92,255)', 'rgb(95,191,255)', 'rgb(202,210,225)', 'rgb(90,95,115)', 'rgb(170,90,143)', 'rgb(95,143,191)', 'rgb(179,163,218)', 'rgb(111,153,232)', 'rgb(170,127,255)', 'rgb(127,212,255)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

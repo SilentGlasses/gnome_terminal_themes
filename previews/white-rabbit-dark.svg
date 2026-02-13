@@ -6,11 +6,11 @@
   </defs>
   
   <!-- Terminal window -->
-  <rect x="0" y="0" width="700" height="420" rx="10" fill="#000000" filter="url(#shadow)"/>
+  <rect x="0" y="0" width="700" height="420" rx="10" fill="#080c0a" filter="url(#shadow)"/>
   
   <!-- Title bar -->
-  <rect x="0" y="0" width="700" height="36" rx="10" fill="#000000"/>
-  <rect x="0" y="26" width="700" height="10" fill="#000000"/>
+  <rect x="0" y="0" width="700" height="36" rx="10" fill="#080c0a"/>
+  <rect x="0" y="26" width="700" height="10" fill="#080c0a"/>
   
   <!-- Window controls -->
   <circle cx="20" cy="18" r="6" fill="#ff5f56"/>
@@ -18,85 +18,85 @@
   <circle cx="60" cy="18" r="6" fill="#27ca40"/>
   
   <!-- Title -->
-  <text x="350" y="22" font-family="monospace" font-size="12" fill="#8fd7b9" text-anchor="middle" opacity="0.7">White Rabbit Dark</text>
+  <text x="350" y="22" font-family="monospace" font-size="12" fill="#c8f5dc" text-anchor="middle" opacity="0.7">White Rabbit Dark</text>
   
   <!-- Separator line -->
-  <line x1="0" y1="36" x2="700" y2="36" stroke="#8fd7b9" stroke-opacity="0.2"/>
+  <line x1="0" y1="36" x2="700" y2="36" stroke="#c8f5dc" stroke-opacity="0.2"/>
   
   <!-- Content area -->
   <g transform="translate(20, 50)">
     <!-- Sample prompt and commands -->
-    <text font-family="monospace" font-size="14" fill="#8fd7b9">
-      <tspan x="0" y="20" fill="#005f0f">❯</tspan>
-      <tspan fill="#8fd7b9"> fastfetch</tspan>
+    <text font-family="monospace" font-size="14" fill="#c8f5dc">
+      <tspan x="0" y="20" fill="#50dc78">❯</tspan>
+      <tspan fill="#c8f5dc"> fastfetch</tspan>
     </text>
     
     <!-- System info block -->
     <text font-family="monospace" font-size="13">
-      <tspan x="0" y="50" fill="#00b733">OS</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">Ubuntu 24.04 LTS x86_64</tspan>
+      <tspan x="0" y="50" fill="#64e6c8">OS</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">Ubuntu 24.04 LTS x86_64</tspan>
       
-      <tspan x="0" y="72" fill="#007a1f">⚙</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">Linux 6.17.0-14-generic</tspan>
+      <tspan x="0" y="72" fill="#f0e664">⚙</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">Linux 6.17.0-14-generic</tspan>
       
-      <tspan x="0" y="94" fill="#00a321">📦</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">1931 (dpkg), 11 (snap)</tspan>
+      <tspan x="0" y="94" fill="#c88cff">📦</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">1931 (dpkg), 11 (snap)</tspan>
       
-      <tspan x="0" y="116" fill="#003d1a">🐚</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">zsh 5.9</tspan>
+      <tspan x="0" y="116" fill="#ff6464">🐚</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">zsh 5.9</tspan>
       
-      <tspan x="0" y="138" fill="#008f11">🖥</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">GNOME Terminal 3.52.0</tspan>
+      <tspan x="0" y="138" fill="#64b4ff">🖥</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">GNOME Terminal 3.52.0</tspan>
       
-      <tspan x="0" y="160" fill="#005f0f">🎨</tspan>
-      <tspan fill="#8fd7b9" opacity="0.5"> -&gt; </tspan>
-      <tspan fill="#8fd7b9">White Rabbit Dark</tspan>
+      <tspan x="0" y="160" fill="#50dc78">🎨</tspan>
+      <tspan fill="#c8f5dc" opacity="0.5"> -&gt; </tspan>
+      <tspan fill="#c8f5dc">White Rabbit Dark</tspan>
     </text>
     
     <!-- Sample code block -->
     <text font-family="monospace" font-size="13">
-      <tspan x="0" y="200" fill="#00e64d"># Sample syntax highlighting</tspan>
-      <tspan x="0" y="222" fill="#008f11">function</tspan>
-      <tspan fill="#007a1f"> greet</tspan>
-      <tspan fill="#8fd7b9">() {</tspan>
-      <tspan x="0" y="244" fill="#8fd7b9">    </tspan>
-      <tspan fill="#008f11">echo</tspan>
-      <tspan fill="#8fd7b9"> </tspan>
-      <tspan fill="#005f0f">"Hello, </tspan>
-      <tspan fill="#00b733">$USER</tspan>
-      <tspan fill="#005f0f">!"</tspan>
-      <tspan x="0" y="266" fill="#8fd7b9">}</tspan>
+      <tspan x="0" y="200" fill="#2d4137"># Sample syntax highlighting</tspan>
+      <tspan x="0" y="222" fill="#64b4ff">function</tspan>
+      <tspan fill="#f0e664"> greet</tspan>
+      <tspan fill="#c8f5dc">() {</tspan>
+      <tspan x="0" y="244" fill="#c8f5dc">    </tspan>
+      <tspan fill="#64b4ff">echo</tspan>
+      <tspan fill="#c8f5dc"> </tspan>
+      <tspan fill="#50dc78">"Hello, </tspan>
+      <tspan fill="#64e6c8">$USER</tspan>
+      <tspan fill="#50dc78">!"</tspan>
+      <tspan x="0" y="266" fill="#c8f5dc">}</tspan>
     </text>
     
     <!-- Color palette circles - Normal colors -->
     <g transform="translate(0, 290)">
-      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#8fd7b9" opacity="0.6">Normal</text>
-      <circle cx="12" cy="18" r="12" fill="#001a0e" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="48" cy="18" r="12" fill="#003d1a" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="84" cy="18" r="12" fill="#005f0f" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="120" cy="18" r="12" fill="#007a1f" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="156" cy="18" r="12" fill="#008f11" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="192" cy="18" r="12" fill="#00a321" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="228" cy="18" r="12" fill="#00b733" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="264" cy="18" r="12" fill="#00cc44" stroke="#8fd7b9" stroke-opacity="0.2"/>
+      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#c8f5dc" opacity="0.6">Normal</text>
+      <circle cx="12" cy="18" r="12" fill="#142319" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="48" cy="18" r="12" fill="#ff6464" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="84" cy="18" r="12" fill="#50dc78" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="120" cy="18" r="12" fill="#f0e664" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="156" cy="18" r="12" fill="#64b4ff" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="192" cy="18" r="12" fill="#c88cff" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="228" cy="18" r="12" fill="#64e6c8" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="264" cy="18" r="12" fill="#dcfaeb" stroke="#c8f5dc" stroke-opacity="0.2"/>
     </g>
     
     <!-- Color palette circles - Bright colors -->
     <g transform="translate(320, 290)">
-      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#8fd7b9" opacity="0.6">Bright</text>
-      <circle cx="12" cy="18" r="12" fill="#00e64d" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="48" cy="18" r="12" fill="#00ff41" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="84" cy="18" r="12" fill="#33ff33" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="120" cy="18" r="12" fill="#5cff5c" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="156" cy="18" r="12" fill="#7fff7f" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="192" cy="18" r="12" fill="#a3ffa3" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="228" cy="18" r="12" fill="#ccffcc" stroke="#8fd7b9" stroke-opacity="0.2"/>
-      <circle cx="264" cy="18" r="12" fill="#e6ffe6" stroke="#8fd7b9" stroke-opacity="0.2"/>
+      <text x="0" y="-5" font-family="monospace" font-size="11" fill="#c8f5dc" opacity="0.6">Bright</text>
+      <circle cx="12" cy="18" r="12" fill="#2d4137" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="48" cy="18" r="12" fill="#ff8c8c" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="84" cy="18" r="12" fill="#78f59b" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="120" cy="18" r="12" fill="#fff58c" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="156" cy="18" r="12" fill="#8cd2ff" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="192" cy="18" r="12" fill="#e1afff" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="228" cy="18" r="12" fill="#8cfae1" stroke="#c8f5dc" stroke-opacity="0.2"/>
+      <circle cx="264" cy="18" r="12" fill="#f0fff8" stroke="#c8f5dc" stroke-opacity="0.2"/>
     </g>
   </g>
 </svg>

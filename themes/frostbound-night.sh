@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Frostbound Night'
 background-color='rgb(11,17,22)'
 foreground-color='rgb(238,244,249)'
-palette=['rgb(11,17,22)', 'rgb(196,106,106)', 'rgb(127,179,163)', 'rgb(201,184,127)', 'rgb(111,167,217)', 'rgb(168,143,212)', 'rgb(127,207,217)', 'rgb(220,230,238)', 'rgb(26,39,50)', 'rgb(224,138,138)', 'rgb(159,208,192)', 'rgb(230,215,159)', 'rgb(143,195,240)', 'rgb(192,167,230)', 'rgb(159,230,240)', 'rgb(255,255,255)']
+palette=['rgb(11,17,22)', 'rgb(196,106,106)', 'rgb(127,179,163)', 'rgb(201,184,127)', 'rgb(111,167,217)', 'rgb(168,143,212)', 'rgb(127,207,217)', 'rgb(220,230,238)', 'rgb(75,95,115)', 'rgb(224,138,138)', 'rgb(159,208,192)', 'rgb(230,215,159)', 'rgb(143,195,240)', 'rgb(192,167,230)', 'rgb(159,230,240)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

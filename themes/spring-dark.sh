@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Spring Dark'
 background-color='rgb(54,54,54)'
 foreground-color='rgb(210,215,211)'
-palette=['rgb(43,43,43)', 'rgb(250,167,166)', 'rgb(152,251,152)', 'rgb(255,250,205)', 'rgb(175,238,238)', 'rgb(255,182,193)', 'rgb(224,255,255)', 'rgb(253,254,254)', 'rgb(43,43,43)', 'rgb(250,167,166)', 'rgb(152,251,152)', 'rgb(255,250,205)', 'rgb(175,238,238)', 'rgb(255,182,193)', 'rgb(224,255,255)', 'rgb(253,254,254)']
+palette=['rgb(43,43,43)', 'rgb(250,167,166)', 'rgb(152,251,152)', 'rgb(255,250,205)', 'rgb(175,238,238)', 'rgb(255,182,193)', 'rgb(224,255,255)', 'rgb(253,254,254)', 'rgb(120,120,120)', 'rgb(255,190,190)', 'rgb(180,255,180)', 'rgb(255,255,225)', 'rgb(200,250,250)', 'rgb(255,210,220)', 'rgb(240,255,255)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

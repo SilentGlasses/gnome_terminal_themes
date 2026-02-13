@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Spring Bloom Night'
 background-color='rgb(15,26,20)'
 foreground-color='rgb(234,246,238)'
-palette=['rgb(15,26,20)', 'rgb(217,108,123)', 'rgb(111,191,143)', 'rgb(217,199,122)', 'rgb(127,182,217)', 'rgb(194,143,217)', 'rgb(111,208,200)', 'rgb(219,238,226)', 'rgb(34,56,44)', 'rgb(240,138,150)', 'rgb(143,221,176)', 'rgb(240,225,154)', 'rgb(159,208,240)', 'rgb(221,176,240)', 'rgb(143,240,230)', 'rgb(255,255,255)']
+palette=['rgb(15,26,20)', 'rgb(217,108,123)', 'rgb(111,191,143)', 'rgb(217,199,122)', 'rgb(127,182,217)', 'rgb(194,143,217)', 'rgb(111,208,200)', 'rgb(219,238,226)', 'rgb(80,110,90)', 'rgb(240,138,150)', 'rgb(143,221,176)', 'rgb(240,225,154)', 'rgb(159,208,240)', 'rgb(221,176,240)', 'rgb(143,240,230)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

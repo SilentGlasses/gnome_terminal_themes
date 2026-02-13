@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Matrix Dark'
 background-color='rgb(15,25,28)'
 foreground-color='rgb(193,255,138)'
-palette=['rgb(15,25,28)', 'rgb(35,117,90)', 'rgb(130,217,103)', 'rgb(255,215,0)', 'rgb(63,82,66)', 'rgb(64,153,49)', 'rgb(80,180,90)', 'rgb(193,255,138)', 'rgb(15,25,28)', 'rgb(35,117,90)', 'rgb(130,217,103)', 'rgb(255,215,0)', 'rgb(63,82,66)', 'rgb(64,153,49)', 'rgb(80,180,90)', 'rgb(193,255,138)']
+palette=['rgb(15,25,28)', 'rgb(35,117,90)', 'rgb(130,217,103)', 'rgb(255,215,0)', 'rgb(63,82,66)', 'rgb(64,153,49)', 'rgb(80,180,90)', 'rgb(193,255,138)', 'rgb(60,95,75)', 'rgb(70,150,115)', 'rgb(160,235,130)', 'rgb(255,225,60)', 'rgb(95,120,100)', 'rgb(100,185,80)', 'rgb(115,210,125)', 'rgb(220,255,175)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

@@ -11,9 +11,9 @@ PROFILE_UUID="9bc27247-d2ef-473f-8382-de0152522258"
 dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 [/]
 visible-name='White Rabbit Dark'
-background-color='rgb(0,0,0)'
-foreground-color='rgb(143,215,185)'
-palette=['rgb(0,26,14)', 'rgb(0,61,26)', 'rgb(0,95,15)', 'rgb(0,122,31)', 'rgb(0,143,17)', 'rgb(0,163,33)', 'rgb(0,183,51)', 'rgb(0,204,68)', 'rgb(0,230,77)', 'rgb(0,255,65)', 'rgb(51,255,51)', 'rgb(92,255,92)', 'rgb(127,255,127)', 'rgb(163,255,163)', 'rgb(204,255,204)', 'rgb(230,255,230)']
+background-color='rgb(8,12,10)'
+foreground-color='rgb(200,245,220)'
+palette=['rgb(20,35,25)', 'rgb(255,100,100)', 'rgb(80,220,120)', 'rgb(240,230,100)', 'rgb(100,180,255)', 'rgb(200,140,255)', 'rgb(100,230,200)', 'rgb(220,250,235)', 'rgb(45,65,55)', 'rgb(255,140,140)', 'rgb(120,245,155)', 'rgb(255,245,140)', 'rgb(140,210,255)', 'rgb(225,175,255)', 'rgb(140,250,225)', 'rgb(240,255,248)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

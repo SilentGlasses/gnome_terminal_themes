@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Flood Contagion'
 background-color='rgb(20,17,14)'
 foreground-color='rgb(230,225,214)'
-palette=['rgb(20,17,14)', 'rgb(124,47,42)', 'rgb(110,127,74)', 'rgb(154,138,74)', 'rgb(74,107,112)', 'rgb(106,74,94)', 'rgb(94,127,130)', 'rgb(230,225,214)', 'rgb(42,38,33)', 'rgb(168,71,64)', 'rgb(143,160,94)', 'rgb(194,182,106)', 'rgb(111,163,166)', 'rgb(140,106,130)', 'rgb(143,183,186)', 'rgb(255,255,255)']
+palette=['rgb(20,17,14)', 'rgb(124,47,42)', 'rgb(110,127,74)', 'rgb(154,138,74)', 'rgb(74,107,112)', 'rgb(106,74,94)', 'rgb(94,127,130)', 'rgb(230,225,214)', 'rgb(100,92,80)', 'rgb(168,71,64)', 'rgb(143,160,94)', 'rgb(194,182,106)', 'rgb(111,163,166)', 'rgb(140,106,130)', 'rgb(143,183,186)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

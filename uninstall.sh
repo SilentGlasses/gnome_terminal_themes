@@ -34,11 +34,7 @@ declare -A themes
 declare -A theme_uuids
 index=1
 
-for script in "$SCRIPT_DIR"/*.sh; do
-    # Skip installer/uninstaller scripts
-    if [ "$script" = "$SCRIPT_DIR/install_all_themes.sh" ] || [ "$script" = "$SCRIPT_DIR/uninstall_themes.sh" ]; then
-        continue
-    fi
+for script in "$SCRIPT_DIR"/themes/*.sh; do
     
     # Extract theme name and UUID
     theme_name=$(grep "^PROFILE_NAME=" "$script" | cut -d'"' -f2)

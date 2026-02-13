@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Neon Nights'
 background-color='rgb(35,31,32)'
 foreground-color='rgb(229,233,240)'
-palette=['rgb(28,11,29)', 'rgb(234,0,20)', 'rgb(0,237,4)', 'rgb(242,242,0)', 'rgb(0,181,236)', 'rgb(244,0,244)', 'rgb(0,225,241)', 'rgb(238,238,238)', 'rgb(9,9,9)', 'rgb(255,0,77)', 'rgb(0,255,13)', 'rgb(241,255,0)', 'rgb(0,200,255)', 'rgb(255,0,251)', 'rgb(0,247,255)', 'rgb(255,255,255)']
+palette=['rgb(28,11,29)', 'rgb(234,0,20)', 'rgb(0,237,4)', 'rgb(242,242,0)', 'rgb(0,181,236)', 'rgb(244,0,244)', 'rgb(0,225,241)', 'rgb(238,238,238)', 'rgb(100,85,100)', 'rgb(255,0,77)', 'rgb(0,255,13)', 'rgb(241,255,0)', 'rgb(0,200,255)', 'rgb(255,0,251)', 'rgb(0,247,255)', 'rgb(255,255,255)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

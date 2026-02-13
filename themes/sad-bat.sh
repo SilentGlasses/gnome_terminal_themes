@@ -11,9 +11,9 @@ PROFILE_UUID="77e8eb8e-18e0-46f1-93e7-d12d03582706"
 dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 [/]
 visible-name='Sad Bat'
-background-color='rgb(42,44,46)'
-foreground-color='rgb(74,85,117)'
-palette=['rgb(25,25,25)', 'rgb(148,65,65)', 'rgb(55,112,58)', 'rgb(171,176,74)', 'rgb(88,101,173)', 'rgb(138,43,226)', 'rgb(147,172,191)', 'rgb(223,224,229)', 'rgb(25,25,25)', 'rgb(148,65,65)', 'rgb(55,112,58)', 'rgb(171,176,74)', 'rgb(88,101,173)', 'rgb(138,43,226)', 'rgb(147,172,191)', 'rgb(223,224,229)']
+background-color='rgb(30,32,38)'
+foreground-color='rgb(180,190,210)'
+palette=['rgb(45,48,55)', 'rgb(200,100,100)', 'rgb(90,160,95)', 'rgb(210,215,110)', 'rgb(130,145,210)', 'rgb(180,100,240)', 'rgb(150,185,205)', 'rgb(230,232,238)', 'rgb(70,75,85)', 'rgb(230,130,130)', 'rgb(120,190,125)', 'rgb(235,240,140)', 'rgb(160,175,235)', 'rgb(210,140,255)', 'rgb(180,210,230)', 'rgb(245,247,252)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

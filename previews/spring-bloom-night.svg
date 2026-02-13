@@ -60,7 +60,7 @@
     
     <!-- Sample code block -->
     <text font-family="monospace" font-size="13">
-      <tspan x="0" y="200" fill="#22382c"># Sample syntax highlighting</tspan>
+      <tspan x="0" y="200" fill="#506e5a"># Sample syntax highlighting</tspan>
       <tspan x="0" y="222" fill="#7fb6d9">function</tspan>
       <tspan fill="#d9c77a"> greet</tspan>
       <tspan fill="#eaf6ee">() {</tspan>
@@ -89,7 +89,7 @@
     <!-- Color palette circles - Bright colors -->
     <g transform="translate(320, 290)">
       <text x="0" y="-5" font-family="monospace" font-size="11" fill="#eaf6ee" opacity="0.6">Bright</text>
-      <circle cx="12" cy="18" r="12" fill="#22382c" stroke="#eaf6ee" stroke-opacity="0.2"/>
+      <circle cx="12" cy="18" r="12" fill="#506e5a" stroke="#eaf6ee" stroke-opacity="0.2"/>
       <circle cx="48" cy="18" r="12" fill="#f08a96" stroke="#eaf6ee" stroke-opacity="0.2"/>
       <circle cx="84" cy="18" r="12" fill="#8fddb0" stroke="#eaf6ee" stroke-opacity="0.2"/>
       <circle cx="120" cy="18" r="12" fill="#f0e19a" stroke="#eaf6ee" stroke-opacity="0.2"/>

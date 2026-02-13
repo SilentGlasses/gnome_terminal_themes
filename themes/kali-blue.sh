@@ -13,7 +13,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/:$PROFILE_UUID/ <<EOF
 visible-name='Kali Blue'
 background-color='rgb(21,28,36)'
 foreground-color='rgb(146,211,216)'
-palette=['rgb(1,3,5)', 'rgb(87,94,97)', 'rgb(37,113,140)', 'rgb(98,124,133)', 'rgb(42,133,154)', 'rgb(46,147,169)', 'rgb(51,169,184)', 'rgb(146,211,216)', 'rgb(1,3,5)', 'rgb(87,94,97)', 'rgb(37,113,140)', 'rgb(98,124,133)', 'rgb(42,133,154)', 'rgb(46,147,169)', 'rgb(51,169,184)', 'rgb(146,211,216)']
+palette=['rgb(1,3,5)', 'rgb(87,94,97)', 'rgb(37,113,140)', 'rgb(98,124,133)', 'rgb(42,133,154)', 'rgb(46,147,169)', 'rgb(51,169,184)', 'rgb(146,211,216)', 'rgb(75,90,105)', 'rgb(120,130,135)', 'rgb(65,145,175)', 'rgb(130,160,170)', 'rgb(75,165,190)', 'rgb(80,180,200)', 'rgb(85,200,215)', 'rgb(180,235,240)']
 use-theme-colors=false
 use-theme-transparency=false
 bold-is-bright=true

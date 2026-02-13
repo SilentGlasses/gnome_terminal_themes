@@ -79,21 +79,34 @@ jobs:
 
             const previewDir = 'previews';
             let comment = '## 🎨 Theme Preview\n\n';
-            comment += 'Previews for changed themes in this PR:\n\n';
+            comment += `Previews for ${changedSlugs.length} changed theme(s) in this PR:\n\n`;
+
+            const repoUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}`;
+            const branch = context.payload.pull_request.head.ref;
 
             if (fs.existsSync(previewDir)) {
+              const previewsFound = [];
+
               for (const slug of changedSlugs) {
                 const file = `${slug}.svg`;
                 const filePath = path.join(previewDir, file);
 
                 if (fs.existsSync(filePath)) {
                   const themeName = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-                  const svgContent = fs.readFileSync(filePath, 'utf8');
-                  const base64 = Buffer.from(svgContent).toString('base64');
-
-                  comment += `### ${themeName}\n`;
-                  comment += `![${themeName}](data:image/svg+xml;base64,${base64})\n\n`;
+                  // Link to raw file in the PR branch
+                  const rawUrl = `${repoUrl}/raw/${branch}/previews/${file}`;
+                  previewsFound.push({ name: themeName, url: rawUrl, slug });
                 }
+              }
+
+              if (previewsFound.length > 0) {
+                // Show previews as linked images (renders in GitHub)
+                for (const preview of previewsFound) {
+                  comment += `### ${preview.name}\n`;
+                  comment += `<img src="${preview.url}" alt="${preview.name}" width="700">\n\n`;
+                }
+              } else {
+                comment += 'Preview files will be generated after merge.\n';
               }
 
               comment += '\n<details>\n<summary>ℹ️ About previews</summary>\n\n';
@@ -101,7 +114,7 @@ jobs:
               comment += 'Once merged, previews will be committed to the `previews/` folder and added to the README.\n';
               comment += '</details>';
             } else {
-              comment += 'No preview files found.';
+              comment += 'No preview files found. Previews will be generated after merge.';
             }
 
             // Find existing comment

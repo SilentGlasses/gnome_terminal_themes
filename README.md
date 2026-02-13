@@ -1,6 +1,6 @@
 # GNOME Terminal Themes
 
-This project includes easy-to-use scripts that automates the installation of GNOME Terminal themes from this repository. The script fetches available theme files directly from the repository and installs them to the correct location on your system based on your operating system.
+This project includes easy-to-use scripts that automates the installation of GNOME Terminal themes from this repository. The script fetches available theme files directly from the repository and installs them to your system.
 
 ## Compatibility
 

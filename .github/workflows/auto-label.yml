@@ -20,7 +20,7 @@ jobs:
         uses: step-security/changed-files@v47
 
       - name: Apply labels
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const changedFiles = '${{ steps.changed.outputs.all_changed_files }}'.split(' ');
